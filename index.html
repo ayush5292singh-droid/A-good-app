@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <title>FINOVA — Smart Money OS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- ONBOARDING: NAME AND AGE -->
+  <section id="onboarding" class="onboarding screen">
+    <div class="onboard-brand">
+      <div class="brand-mark">F<span>.</span></div>
+      <span>FINOVA</span>
+    </div>
+
+    <div class="onboard-layout">
+      <div class="onboard-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR MONEY. YOUR FUTURE.</div>
+        <h1>Money moves.<br><span>Dreams grow.</span></h1>
+        <p>Meet your personal money space. Track your spending, manage your goals, and see your financial world in a whole new way.</p>
+
+        <div class="hero-cards">
+          <div class="floating-card card-back">
+            <div class="card-top"><span>FINOVA BLACK</span><span>✦</span></div>
+            <div class="chip"></div>
+            <div class="card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 2048</div>
+            <div class="card-bottom"><span>SMART WALLET</span><span>VISA</span></div>
+          </div>
+          <div class="floating-card card-front">
+            <div class="card-top"><span>FINOVA <b>✳</b></span><span class="card-signal">◉</span></div>
+            <div class="card-label">TOTAL BALANCE</div>
+            <div class="card-balance">₹84,650<span>.00</span></div>
+            <div class="card-bottom"><span>YOUR MONEY, IN MOTION</span><span>↗</span></div>
+          </div>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="floating-chip">↗ +12.8% <small>this month</small></div>
+        </div>
+
+        <div class="hero-footnote"><span>✦</span> A clearer view of your financial life.</div>
+      </div>
+
+      <form id="profileForm" class="onboard-panel">
+        <div class="panel-step">01 <span>— YOUR PROFILE</span></div>
+        <h2>Let's make it <span>yours.</span></h2>
+        <p class="muted">First, tell us a little about yourself.</p>
+
+        <label for="userName">What should we call you?</label>
+        <div class="input-wrap"><span>✧</span><input id="userName" type="text" placeholder="Enter your name" maxlength="40" required autocomplete="given-name"></div>
+
+        <label for="userAge">How old are you?</label>
+        <div class="input-wrap"><span>◷</span><input id="userAge" type="number" placeholder="Enter your age" min="1" max="120" required inputmode="numeric"></div>
+
+        <button class="primary-btn full-btn" type="submit">Continue <span>↗</span></button>
+        <div class="privacy-note">◈ Your profile stays on this device in this demo.</div>
+      </form>
+    </div>
+    <div class="onboard-footer"><span>FINOVA SMART MONEY OS</span><span>DESIGNED FOR YOUR NEXT CHAPTER ↗</span></div>
+  </section>
+
+  <!-- FINOVA INTRO -->
+  <section id="welcomeScreen" class="welcome-screen screen hidden">
+    <div class="onboard-brand"><div class="brand-mark">F<span>.</span></div><span>FINOVA</span></div>
+    <div class="welcome-content">
+      <div class="welcome-symbol"><span>F</span><i></i><i></i><i></i></div>
+      <div class="eyebrow"><span class="live-dot"></span> INTRODUCING YOUR MONEY OS</div>
+      <h1>Welcome to a<br><span>smarter money life.</span></h1>
+      <p>One space for your spending, your goals, your plans, and everything you're building towards.</p>
+      <div class="welcome-pills">
+        <span>◈ Track spending</span><span>↗ Build goals</span><span>⌁ See the big picture</span>
+      </div>
+      <button id="enterAppBtn" class="primary-btn">Enter FINOVA <span>↗</span></button>
+      <div class="welcome-caption">YOUR FINANCIAL WORLD, REIMAGINED.</div>
+    </div>
+    <div class="welcome-bottom"><span>FINOVA / 01</span><span>MOVE WITH PURPOSE.</span></div>
+  </section>
+
+  <!-- MAIN APP -->
+  <div id="appShell" class="app-shell hidden">
+    <aside class="sidebar">
+      <a class="sidebar-brand" href="#" data-home>
+        <div class="brand-mark">F<span>.</span></div><span>FINOVA<small>SMART MONEY OS</small></span>
+      </a>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav id="sideNav">
+        <button class="nav-item active" data-page="dashboard"><span>◫</span> Dashboard</button>
+        <button class="nav-item" data-page="transactions"><span>⇄</span> Transactions</button>
+        <button class="nav-item" data-page="wallets"><span>▣</span> Wallets</button>
+        <button class="nav-item" data-page="budgets"><span>◴</span> Budgets</button>
+        <button class="nav-item" data-page="goals"><span>◎</span> Savings goals</button>
+        <button class="nav-item" data-page="loans"><span>↗</span> Loans & EMI</button>
+        <button class="nav-item" data-page="recurring"><span>⟳</span> Recurring</button>
+        <button class="nav-item" data-page="calendar"><span>▦</span> Calendar</button>
+        <button class="nav-item" data-page="receipts"><span>▤</span> Receipt scanner</button>
+      </nav>
+
+      <div class="side-label">INSIGHTS</div>
+      <nav>
+        <button class="nav-item" data-page="analytics"><span>⌁</span> Analytics</button>
+        <button class="nav-item" data-page="reports"><span>▥</span> Reports</button>
+      </nav>
+
+      <div class="sidebar-pro">
+        <div class="pro-spark">✳</div>
+        <strong>Make more of your money.</strong>
+        <p>Explore FINOVA Pro tools.</p>
+        <button data-page="pro" class="pro-link">Explore Pro <span>↗</span></button>
+      </div>
+      <button class="nav-item settings-nav" data-page="settings"><span>⚙</span> Settings</button>
+      <div class="sidebar-profile"><div class="avatar" id="sideAvatar">F</div><div><strong id="sideName">My Finance</strong><small>Personal workspace</small></div><button id="profileMenuBtn" title="Profile">···</button></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button id="mobileMenuBtn" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="pageCrumb">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <span class="status-pill"><i></i> YOUR SPACE</span>
+          <button class="icon-btn" id="themeBtn" title="Toggle appearance">◐</button>
+          <button class="avatar small-avatar" id="topAvatar">F</button>
+        </div>
+      </header>
+
+      <div id="pageContent" class="page-content"></div>
+      <footer class="app-footer"><span>FINOVA <b>✳</b> SMART MONEY OS</span><span>YOUR MONEY. YOUR MOMENTUM.</span></footer>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modalRoot"></div>
+  <input type="file" id="receiptFile" accept="image/*" class="hidden">
+
+  <script src="script.js"></script>
+</body>
+</html>
